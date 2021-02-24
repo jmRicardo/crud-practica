@@ -27,8 +27,9 @@ public class PersonService {
         personRepository.save(person);
     }
 
-    public void update(Person person)
+    public void update(Person person,long id)
     {
+        person.setId(id);
         personRepository.save(person);
     }
 
